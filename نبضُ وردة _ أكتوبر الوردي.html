@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>نبضُ وردة | أكتوبر الوردي</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Reem+Kufi:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff6f9;--bg2:#ffe7ef;--card:#ffffff;--ink:#3a1a28;--mute:#7a5566;--pink:#e8457c;--pink2:#ff8fb3;--deep:#b8235a;--ok:#1f9d6b;--bad:#d6334d;--line:#f6cddb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a0f15;--bg2:#2a1520;--card:#26151d;--ink:#fde8f0;--mute:#d3a9ba;--pink:#ff6b9d;--pink2:#e8457c;--deep:#ff9fc0;--ok:#4cd19a;--bad:#ff7a8e;--line:#4a2535}}
+:root[data-theme="dark"]{--bg:#1a0f15;--bg2:#2a1520;--card:#26151d;--ink:#fde8f0;--mute:#d3a9ba;--pink:#ff6b9d;--pink2:#e8457c;--deep:#ff9fc0;--ok:#4cd19a;--bad:#ff7a8e;--line:#4a2535}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,Tahoma,sans-serif;line-height:1.9;overflow-x:hidden}
+h1,h2,h3{font-family:'Reem Kufi',Tajawal,sans-serif;margin:0;line-height:1.4}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;justify-content:space-between;align-items:center;padding:10px 5vw;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:'Reem Kufi';font-weight:700;font-size:1.3rem;color:var(--pink);display:flex;gap:8px;align-items:center}
+nav div{display:flex;gap:18px;font-weight:500;font-size:.95rem}
+nav a{color:var(--ink);text-decoration:none}nav a:hover{color:var(--pink)}
+@media(max-width:620px){nav div{display:none}}
+section{padding:80px 5vw;max-width:1100px;margin:auto}
+.tag{display:inline-block;background:var(--bg2);color:var(--deep);padding:4px 16px;border-radius:99px;font-weight:700;font-size:.9rem;margin-bottom:14px;border:1px solid var(--line)}
+/* hero */
+.hero{text-align:center;position:relative;padding-top:70px}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;z-index:-1;animation:float 9s ease-in-out infinite}
+.b1{width:280px;height:280px;background:var(--pink2);top:0;right:-60px}
+.b2{width:240px;height:240px;background:#ffc2d6;bottom:40px;left:-50px;animation-delay:-4s}
+@keyframes float{50%{transform:translateY(30px)}}
+.ribbon{width:96px;height:auto;animation:beat 2.4s ease-in-out infinite;filter:drop-shadow(0 10px 18px rgba(232,69,124,.4))}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+.hero h1{font-size:clamp(2rem,6vw,3.6rem);margin:18px 0}
+.hero h1 span{background:linear-gradient(90deg,var(--pink),var(--deep));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{max-width:640px;margin:0 auto 26px;color:var(--mute);font-size:1.15rem}
+.stat{display:inline-flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:18px 28px;box-shadow:0 14px 40px -18px var(--pink);margin:10px 0 30px;text-align:right}
+.stat b{font-family:'Reem Kufi';font-size:3.4rem;color:var(--pink);line-height:1}
+.stat span{max-width:240px;font-weight:500}
+.msgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;text-align:right;margin-top:10px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px 24px}
+.box h3{font-size:1.15rem;color:var(--deep);margin-bottom:6px}
+.btn{display:inline-flex;gap:8px;align-items:center;border:0;cursor:pointer;font:700 1rem Tajawal;background:linear-gradient(135deg,var(--pink),var(--deep));color:#fff;padding:12px 28px;border-radius:99px;box-shadow:0 10px 24px -8px var(--pink);transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+/* carousel */
+.head{text-align:center;margin-bottom:34px}.head h2{font-size:clamp(1.6rem,4.2vw,2.5rem)}
+.car{background:linear-gradient(160deg,var(--bg2),var(--card));border:1px solid var(--line);border-radius:32px;padding:clamp(18px,4vw,40px);position:relative;overflow:hidden}
+.track{display:flex;transition:transform .5s cubic-bezier(.6,.1,.2,1)}
+.slide{min-width:100%;direction:rtl;text-align:center;padding:10px 6px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.num{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;font-size:2.2rem;background:linear-gradient(135deg,var(--pink),var(--deep));color:#fff;box-shadow:0 0 0 10px color-mix(in srgb,var(--pink) 18%,transparent)}
+.slide h3{font-size:1.5rem;color:var(--deep)}
+.slide p{max-width:560px;margin:0;font-size:1.1rem;min-height:110px}
+.ctrl{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:10px}
+.ctrl button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--pink);font-size:1.3rem;cursor:pointer}
+.ctrl button:hover{background:var(--pink);color:#fff}
+.dots{display:flex;gap:8px}.dots i{width:10px;height:10px;border-radius:99px;background:var(--line);cursor:pointer;transition:.3s}.dots i.on{width:28px;background:var(--pink)}
+.bar{height:5px;background:var(--line);border-radius:9px;margin-top:20px;overflow:hidden}.bar u{display:block;height:100%;background:var(--pink);width:20%;transition:.5s;margin-right:0}
+/* myth fact */
+.pairs{display:grid;gap:16px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:700px){.pair{grid-template-columns:1fr}}
+.c{border-radius:22px;padding:22px 24px;border:1px solid var(--line);background:var(--card);position:relative}
+.c small{display:inline-block;font-weight:800;padding:2px 14px;border-radius:99px;margin-bottom:8px;font-size:.85rem}
+.myth{border-color:color-mix(in srgb,var(--bad) 45%,var(--line))}.myth small{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
+.myth p{text-decoration:line-through;text-decoration-color:var(--bad);color:var(--mute)}
+.fact{border-color:color-mix(in srgb,var(--ok) 45%,var(--line))}.fact small{background:color-mix(in srgb,var(--ok) 16%,transparent);color:var(--ok)}
+.c p{margin:0;font-weight:500}
+.note{margin-top:24px;text-align:center;background:var(--bg2);border:1px dashed var(--pink);border-radius:18px;padding:16px;font-weight:700;color:var(--deep)}
+/* support */
+.support{text-align:center;background:linear-gradient(135deg,var(--pink),var(--deep));color:#fff;border-radius:36px;padding:clamp(34px,7vw,70px) clamp(20px,5vw,60px);position:relative;overflow:hidden}
+.support h2{font-size:clamp(1.5rem,4vw,2.4rem);margin-bottom:18px}
+.support p{max-width:680px;margin:0 auto 14px;font-size:1.15rem}
+.support .love{display:inline-block;background:rgba(255,255,255,.18);padding:14px 26px;border-radius:20px;margin-top:10px;font-weight:700}
+.petal{position:absolute;font-size:1.6rem;opacity:.35;animation:float 7s ease-in-out infinite}
+footer{text-align:center;padding:36px 5vw 50px;color:var(--mute);font-size:.95rem}
+.toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,100px);background:var(--ink);color:var(--bg);padding:10px 22px;border-radius:99px;transition:.4s;z-index:20}.toast.show{transform:translate(-50%,0)}
+.rev{opacity:0;transform:translateY(24px);transition:.8s}.rev.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rev{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">🌸 نبضُ وردة</div>
+  <div><a href="#start">الإطلاق</a><a href="#guide">الفحص الذاتي</a><a href="#facts">حقائق وشائعات</a><a href="#support">رسالة دعم</a></div>
+  <button class="btn" style="padding:7px 18px;font-size:.9rem" onclick="share()">شاركي 🌸</button>
+</nav>
+
+<section class="hero rev" id="start">
+  <i class="blob b1"></i><i class="blob b2"></i>
+  <svg class="ribbon" viewBox="0 0 100 120" aria-hidden="true"><path d="M50 8C28 8 14 24 14 42c0 14 8 24 18 36L20 108l18-10 12 16 12-16 18 10-12-30c10-12 18-22 18-36C86 24 72 8 50 8z" fill="#e8457c"/><path d="M50 40c-9-14-24-6-18 6 3 7 12 14 18 20 6-6 15-13 18-20 6-12-9-20-18-6z" fill="#fff" opacity=".92"/></svg>
+  <div><span class="tag">أكتوبر الوردي 🌸</span></div>
+  <h1>أكتوبر ليس مجرد لون...<br>بل <span>أمل يُنقذ حياة!</span></h1>
+  <p class="lead">في كل عام، يأتي شهر أكتوبر ليذكّرنا بقوة الصمود وأهمية العناية بالذات. الوردي ليس مجرد لون نرتديه، بل هو رمز للتضامن والشجاعة.</p>
+  <div class="stat"><b data-n="95">0</b><span>هل تعلمين أن الكشف المبكر يرفع نسبة الشفاء إلى أكثر من <strong>95%</strong>؟</span></div>
+  <p style="color:var(--mute);font-size:1.1rem;margin-top:0">خطوة بسيطة جداً ولحظات تصنع الفارق لسنوات قادمة.</p>
+  <div class="msgs">
+    <div class="box"><h3>💡 رسالة هذا الشهر</h3>اهتمّي بنفسكِ أولاً، وشجّعي من تحبّين على الكشف.</div>
+    <div class="box"><h3>🔖 دعوة للمشاركة</h3>شاركي هذه المنصة مع صديقتكِ، أختكِ، أو والدتكِ لتكوني سبباً في نشر الوعي اليوم.<br><br><button class="btn" onclick="share()">انشري الوعي</button></div>
+  </div>
+</section>
+
+<section id="guide" class="rev">
+  <div class="head"><span class="tag">🔍 دليل مصوّر</span><h2>5 دقائق شهرياً لحماية نفسكِ...<br>كيف تُجرين الفحص الذاتي؟ 🩺</h2></div>
+  <div class="car" id="car">
+    <div class="track" id="track">
+      <div class="slide"><div class="num">📅</div><h3>1 · متى يُجرى الفحص؟</h3><p>أفضل وقت هو بعد انتهاء الدورة الشهرية بأسبوع.</p></div>
+      <div class="slide"><div class="num">🪞</div><h3>2 · الملاحظة</h3><p>قفي أمام المرآة بكتفين مستقيمين، ولاحظي أي تورّم أو تغيّر غير معتاد في الشكل أو الجلد.</p></div>
+      <div class="slide"><div class="num">🖐️</div><h3>3 · اللمس</h3><p>استخدمي أطراف أصابعكِ الثلاثة بحركة دائرية للتحقق من المنطقة بأكملها.</p></div>
+      <div class="slide"><div class="num">🛏️</div><h3>4 · وضعية الاستلقاء</h3><p>كرّري الفحص أثناء الاستلقاء على الظهر لضمان توزّع الأنسجة بوضوح.</p></div>
+      <div class="slide"><div class="num">👩‍⚕️</div><h3>5 · عند ملاحظة تغيّر</h3><p>لا تترددي ولا تقلقي؛ استشارة الطبيب هي الخطوة الأمثل دائماً.</p></div>
+    </div>
+    <div class="ctrl"><button id="pv" aria-label="السابق">→</button><div class="dots" id="dots"></div><button id="nx" aria-label="التالي">←</button></div>
+    <div class="bar"><u id="pr"></u></div>
+  </div>
+</section>
+
+<section id="facts" class="rev">
+  <div class="head"><span class="tag">❌ ✅ تصحيح المفاهيم</span><h2>الحقيقة مقابل الشائعة</h2></div>
+  <div class="pairs">
+    <div class="pair"><div class="c myth"><small>❌ الشائعة</small><p>الكشف الذاتي يكفي ولا حاجة للفحوصات الطبية.</p></div><div class="c fact"><small>✅ الحقيقة</small><p>الفحص الذاتي مهم، لكن الماموجرام هو الوسيلة الأدق والأهم للكشف المبكر جداً.</p></div></div>
+    <div class="pair"><div class="c myth"><small>❌ الشائعة</small><p>المرض يصيب كبار السن فقط.</p></div><div class="c fact"><small>✅ الحقيقة</small><p>قد يصيب النساء في مختلف الأعمار، لذا الوقاية والتوعية مهمة للجميع.</p></div></div>
+    <div class="pair"><div class="c myth"><small>❌ الشائعة</small><p>الشعور بأي كتلة يعني بالضرورة وجود خطر.</p></div><div class="c fact"><small>✅ الحقيقة</small><p>أغلب الكتل أو التغيرات تكون حميدة وطبيعية، والاستشارة الطبية تمنحكِ اليقين والاطمئنان.</p></div></div>
+  </div>
+  <div class="note">📌 تذكّري دائماً: استشيري المختصين ولا تعتمدي على المعلومات غير الموثوقة</div>
+</section>
+
+<section id="support" class="rev">
+  <div class="support">
+    <span class="petal" style="top:12%;right:8%">🌸</span><span class="petal" style="bottom:14%;left:9%;animation-delay:-3s">🌸</span><span class="petal" style="top:20%;left:15%;animation-delay:-5s">🤍</span>
+    <span class="tag" style="background:rgba(255,255,255,.2);color:#fff;border-color:transparent">🤍 رسالة دعم وقوة</span>
+    <h2>إلى كل محاربة ومتعافية...<br>أنتِ مصدر إلهام وقوة 🌸</h2>
+    <p>الرحلة ليست سهلة، لكن القوة التي تعيش في داخلكِ أعظم بكثير من أي تحدٍّ. إلى كل امرأة تخوض الملحمة بشجاعة، وإلى كل متعافية تبتسم اليوم بثقة: قصتكِ تنير الطريق لغيركِ.</p>
+    <div class="love">ولأحباء المحاربات: كلمة طيبة، ودعاء، ودعم نفسي صادق هو نصف العلاج.</div>
+  </div>
+</section>
+
+<footer>🌸 نبضُ وردة — مبادرة توعوية بمناسبة أكتوبر الوردي<br><small>المحتوى للتوعية العامة ولا يغني عن استشارة الطبيب المختص.</small></footer>
+<div class="toast" id="toast">تم نسخ الرابط 🌸</div>
+
+<script>
+var i=0,n=5,tr=document.getElementById('track'),dots=document.getElementById('dots'),pr=document.getElementById('pr');
+for(var k=0;k<n;k++){var d=document.createElement('i');d.onclick=(function(k){return function(){go(k)}})(k);dots.appendChild(d)}
+function go(x){i=(x+n)%n;tr.style.transform='translateX('+(i*100)+'%)';[].forEach.call(dots.children,function(d,j){d.className=j==i?'on':''});pr.style.width=((i+1)/n*100)+'%'}
+document.getElementById('nx').onclick=function(){go(i+1)};document.getElementById('pv').onclick=function(){go(i-1)};
+var sx=0,car=document.getElementById('car');
+car.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+car.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(i+(dx>0?1:-1))});
+go(0);
+function share(){var u=location.href,t='أكتوبر ليس مجرد لون... بل أمل يُنقذ حياة 🌸';
+if(navigator.share){navigator.share({title:'نبضُ وردة',text:t,url:u}).catch(function(){})}
+else{try{navigator.clipboard.writeText(t+' '+u)}catch(e){}var el=document.getElementById('toast');el.classList.add('show');setTimeout(function(){el.classList.remove('show')},2200)}}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');var c=e.target.querySelector('[data-n]');if(c&&!c.done){c.done=1;var t=+c.dataset.n,v=0,m=setInterval(function(){v+=2;c.textContent=v+'%';if(v>=t){clearInterval(m)}},25)}}})},{threshold:.12});
+[].forEach.call(document.querySelectorAll('.rev'),function(e){io.observe(e)});
+</script>
+</body>
+</html>
